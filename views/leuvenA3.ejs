@@ -1,0 +1,42 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/leuven"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <p class="spatie"> De winkelactie Leuven, die normaal gezien enkel op zaterdagen geldig is, wordt in 2017 uitgebreid naar de koopzondagen. Elke eerste zondag van de maand is het koopzondag in Leuven. In december zijn er een aantal extra koopzondagen.</p>
+          <p class="spatie"> Halte ‘Hof Ter Schelde’ is tevens de beginhalte van lijn 36R. Deze lijn verbindt Linkeroever elke 20 minuten rechtstreeks met de F. Rooseveltplaats. </p>
+          <ul>
+            <li> 5 februari 2017 </li>
+            <li> 5 maart 2017 </li>
+            <li> 2 april 2017 </li>
+            <li> 7 mei 2017 </li>
+            <li> 4 juni 2017 </li>
+            <li> 2 juli 2017 </li>
+            <li> 6 augustus 2017 </li>
+            <li> 3 september 2017 </li>
+          </ul>
+          <p class="spatie"> De actie is bovendien nog op enkele andere data geldig:</p>
+            <ul>
+              <li> Leuven by Night (late night shopping) op woensdag 24 mei en vrijdag 24 november 2017</li>
+              <li> Zondag Autovrij op zondag 27 augustus 2017 </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[2].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[2].overzichtText;
+</script>

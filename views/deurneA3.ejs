@@ -1,0 +1,41 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/deurne"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+            <p class="spatie"> De bus blijft in Merksem op de Bredabaan tot voorbij het Burgemeester Nolfplein, en gaat dan via de Minister Delbekelaan naar het Albertkanaal om gebruik te maken van de brug aan het Sportpaleis (Burg. G. Theunisbrug). De rest van de omleiding in Deurne loopt via de Van der Delftstraat,
+               Ten Eekhovelei en Te Couwelaarlei. De omleiding volgt in beide richtingen dezelfde route. </p>
+          <h1> Niet bediende haltes </h1>
+            <ul class="spatie">
+              <li> Sint-Bartholomeusstraat </li>
+              <li> Deurnebaan Albertkanaal </li>
+              <li> Lakborslei </li>
+              <li>  J. Scheurweghstraat </li>
+            </ul>
+            <h1> Vervanghaltes </h1>
+              <ul class="spatie">
+                <li> Barnkracht </li>
+                <li> Burgemeester Nolf </li>
+                <li> Gasthuishoeve </li>
+                <li> Tijdelijke halte in de Van der Delftstraat </li>
+                <li> Tijdelijke halte in de Van der Delftstraat </li>
+                <li> Tijdelijke halte in Te Couwelaarlei / Ten Eekhovelei (bij kruispunt Lakborslei) </li>
+              </ul>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[2].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[2].overzichtText;
+</script>

@@ -1,0 +1,22 @@
+<% include header %>
+
+
+
+<h1> hallokes </h1>
+<p id="result1"></p>
+<p id="result2"></p>
+<p id="result3"></p>
+
+<button type="button" name="button" class="antwerpen" onclick="antwerpen()"> Antwerpen </button>
+
+<p> <%-data-%></p>
+
+<script>
+  var myVar = <%-data%>;
+  console.log(<%-data%>);
+  document.getElementById('result1').innerHTML = myVar.nieuwsberichten[0].titel;
+  document.getElementById('result2').innerHTML = myVar.nieuwsberichten[1].titel;
+  document.getElementById('result3').innerHTML = myVar.nieuwsberichten[2].titel;
+</script>
+
+<% include nav %>

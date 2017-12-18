@@ -1,0 +1,36 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/merksem"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Alternatieven </h1>
+            <ul class="spatie">
+              <li> Voor Brasschaat, Wuustwezel, Brecht: </li>
+                  <p class="spatie"> Reizigers kunnen gebruik maken van bus 640. Ofwel door een wandeling naar de haltes op de Lambrechtshoekenlaan voor een rechtstreekse rit.
+                    Ofwel door eerst op de Bredabaan tram 2 of 3 te nemen naar de eindhalte 'P+R Merksem' (Keizershoek) en daar over te stappen op bus 640. De trams rijden allebei aan een hoge frequentie.</p>
+              <li> Voor Ekeren Donk, Mariaburg, Kapellen:   </li>
+                <p class="spatie"> Reizigers kunnen gebruik maken van bus 650.
+                  Ze nemen best eerst op de Bredabaan tram 2 of 3 naar de eindhalte 'P+R Merksem' (Keizershoek) om daar over te stappen op bus 650. De trams rijden allebei aan een hoge frequentie. </p>
+              <li> Voor Putte:   </li>
+                <p class="spatie"> Reizigers kunnen gebruik maken van bus 720 of snelbus 776. Ze nemen daarvoor eerst tram 6 op de Groenendaallaan richting P+R Luchtbal, en stappen over op bus 720 of 776 op de Noorderlaan (bv. halte 'Kinepolis'). De tram rijdt aan een hoge frequentie. Vanop de Bredabaan kan je ook bus 600 tot en met 621 nemen richting Antwerpen en dan eveneens op de Noorderlaan (halte 'Kinepolis') overstappen op bus 720 of 776. Door de combinatie van buslijnen op de Bredabaan is de wachttijd ook in dit geval beperkt. </p>
+            </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[2].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[2].overzichtText;
+</script>

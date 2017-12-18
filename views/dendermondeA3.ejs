@@ -1,0 +1,38 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/dendermonde"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <ul>
+            <li> Welke lijnen rijden door mijn gemeente?</li>
+            <li> Is er een speciale dienstregeling tijdens evenementen, markten, ..? </li>
+            <li> Betaalt mijn gemeente een deel van mijn abonnement, lijnkaart, ... ? </li>
+            <li> Is er recent nieuws over De Lijn in mijn gemeente? </li>
+          </ul>
+          <h1> Bewaar uw gemeente </h1>
+            <p class="spatie"> Door uw gemeente te bewaren blijft uw gemeente steeds in uw overzicht staan en kunt u er gemakkelijk opnieuw naartoe surfen.
+              U kunt ook meerdere gemeenten bewaren. Ga als volgt te werk: </p>
+              <ol>
+                <li> Log in op de homepagina van de website via de knop 'Aanmelden' (rechtsboven) </li>
+                <li> of log in via de knop 'Bewaar gemeente' op uw gemeentepagina. </li>
+              </ol>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[2].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[2].overzichtText;
+</script>

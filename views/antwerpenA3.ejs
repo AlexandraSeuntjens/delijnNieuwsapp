@@ -1,0 +1,32 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/antwerpen"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Nieuwe dienstregeling </h1>
+            <p class="spatie"> Lijn 36L rijdt tussen halte ‘IGLO’ volgens de normale reisweg tot aan eindhalte ‘Hof Ter Schelde’. Reizigers kunnen aan halte ‘Van Eedenplein’ overstappen op de metro.
+              Met 4 verschillende lijnen moet je in station ‘Van Eeden’ niet langer dan drie minuten wachten op een metro naar het centrum. </p>
+            <p class="spatie"> Halte ‘Hof Ter Schelde’ is tevens de beginhalte van lijn 36R. Deze lijn verbindt Linkeroever elke 20 minuten rechtstreeks met de F. Rooseveltplaats. </p>
+          <h1> Waarom wordt Lijn 36 opgesplitst? </h1>
+            <p class="spatie"> Door de grote verkeersdrukte in de Waaslandtunnel was het niet langer mogelijk om een betrouwbare lijn 36 te verzorgen. De splitsing en aanpassing van de dienstregeling zorgen voor stiptere bussen.
+              Lijn 36L blijft enkel op Linkeroever rijden en loopt daarom niet langer vertragingen op door de files in de Waaslandtunnel. Lijn 36R krijgt meer tijd tussen de ritten waardoor eventuele vertragingen worden opgevangen. </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[2].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[2].overzichtText;
+</script>

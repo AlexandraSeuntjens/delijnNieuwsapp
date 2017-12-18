@@ -1,0 +1,58 @@
+<% include header %>
+
+<body>
+  <div class="kader">
+    <div>
+        <div id="drieresultaat">
+  				<button class="backbutton"><a href="/zoek"> < </a></button>
+     			<img class="logo" src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg">
+        </div>
+
+      <div id="eenresultaat">
+        <p> Gemeente: Gent</p>
+     </div>
+
+      </div>
+       <div id="tweeresultaat">
+        <p class="tweep"> Recent </p>
+      </div>
+      <div id="vierresultaat">
+       <div id="vierfoto">   </div>
+
+       <div class="schuinTwee vier">
+         <p class="artikel" id="artikel1"></p>
+         <button id="buttonresultaat"class="button vierb"><a href="/gentA1">READ</a></button>
+       </div>
+      </div>
+      <div id="vijfresultaat">
+         <div id="vijffoto"> </div>
+         <div class="schuinTwee vijf">
+           <p class="artikel" id="artikel2"></p>
+
+  				 <button id="buttonresultaat"class="button vijfb"><a href="/gentA2">READ</a></button>
+         </div>
+      </div>
+  		<div id="tweeresultaat">
+  		 <p class="tweep"> Onlangs gebeurd </p>
+  	 </div>
+      <div id="zesresultaat">
+         <div id="zesfoto"> </div>
+
+      </div>
+      <div id="zevenresultaat">
+         <div id="zevenfoto"> </div>
+         <div class="schuinTwee zeven">
+           <p class="artikel" id="artikel3"></p>
+           <button id="buttonresultaat"class="button zevenb"><a href="/gentA3">READ</a></button>
+         </div>
+      </div>
+  </div>
+</body>
+
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('artikel1').innerHTML = gemeente.nieuwsberichten[0].titel;
+  document.getElementById('artikel2').innerHTML = gemeente.nieuwsberichten[1].titel;
+  document.getElementById('artikel3').innerHTML = gemeente.nieuwsberichten[2].titel;
+</script>

@@ -1,0 +1,37 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/deurne"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Lijnen 6 en 9: Mechelen Station - Industrie Noord - Tivoli </h1>
+            <p class="spatie"> Door het einde van de werken aan de Blarenbergbrug rijden de lijnen 6 en 9 opnieuw langs hun oorspronkelijke reisweg in het bedrijventerrein
+              ‘Industrie Noord’. Hierdoor wijzigt ook de dienstregeling.</p>
+          <h1> Lijn 90: Lier - Mortsel - Berchem Station </h1>
+            <p class="spatie"> De woensdagrit met vertrek om 12.14 uur in Lier rijdt voortaan tot aan Berchem Station.</p>
+          <h1> Lijn 219: Vorselaar scholen - Herentals - O.L.V-Olen - Lichtaart - Poederlee </h1>
+            <p class="spatie">De rit met vertrek om 15.50 uur in 'Vorselaar Van Roeyinstituut', die in Olen de halte 'Fabrieken' bedient, wordt niet langer gereden.
+              Reizigers kunnen gebruik maken van de andere bus met dezelfde vertektijd. Deze bus bedient onder meer Olen Station en rijdt verder tot in Poederlee.</p>
+          <h1> Lijn 220: Aarschot - Hulshout - Morkhoven - Herentals </h1>
+            <p class="spatie"> De rit op schooldagen met vertrek in Aarschot om 12.10 uur vertrekt voortaan 5 minuten later, dus om 12.15 uur.
+              Hierdoor sluit de bus beter aan op de schooluren.
+            </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[1].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[1].overzichtText;
+</script>

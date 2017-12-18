@@ -1,0 +1,229 @@
+body {
+  width: 100%;
+
+}
+.kader {
+  width: 375px;
+  height: 667px;
+  font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.logo{
+  width: 26.5%;
+  float: right;
+}
+
+#eenresultaat {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      height: 80px;
+      background-color: #F5F5F5;
+      color:black;
+      padding-top: 60px;
+      font-family: 'Abel', sans-serif;
+      margin-top: 19px;
+}
+#tweeresultaat {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 30px;
+  background-color: black;
+  color:black;
+  font-family: 'Abel', sans-serif;
+  margin-top: 50px;
+  width:50%;
+}
+
+#drieresultaat{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: 80px;
+  background-color: white;
+  color:white;
+  font-family: 'Abel', sans-serif;
+}
+#vierresultaat {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 187.5px;
+  background-color: red;
+  font-family: 'Abel', sans-serif;
+  width:100%;
+
+}
+#vierfoto {
+  width: 100%;
+  height: 100%;
+  background: url("http://www2.uol.com.br/guiadolitoral/imgnoticia/conheca-a-historia-por-tras-da-iconica-foto-de-einstein-mostrando-a-lingua-4030-f1.jpg");
+  background-size: cover;
+}
+
+#vijfresultaat {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 187.5px;
+  background-color: ;
+  font-family: 'Abel', sans-serif;
+  width:50%;
+  margin-left: 50%;
+  margin-top: -50%;
+
+}
+#vijffoto {
+  opacity: 0.0;
+  height: 100%;
+  background: url("https://static.delijn.be/Images/aangepastedienstregeling_tcm3-11533.jpg");
+  background-size: cover;
+}
+#zesresultaat {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  height: 187.5px;
+  background-color: red;
+  font-family: 'Abel', sans-serif;
+  width:50%;
+  margin-top: 70px;
+
+}
+#zesfoto {
+  width: 100%;
+  height: 100%;
+  background: url("http://www2.uol.com.br/guiadolitoral/imgnoticia/conheca-a-historia-por-tras-da-iconica-foto-de-einstein-mostrando-a-lingua-4030-f1.jpg");
+  background-size: cover;
+  margin-top: -70px;
+}
+#zevenresultaat {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  height: 187.5px;
+  background-color: red;
+  font-family: 'Abel', sans-serif;
+  width:50%;
+  margin-left: 50%;
+  margin-top: -50%;
+
+}
+#zevenfoto {
+  width: 100%;
+  height: 100%;
+  background: url("http://www2.uol.com.br/guiadolitoral/imgnoticia/conheca-a-historia-por-tras-da-iconica-foto-de-einstein-mostrando-a-lingua-4030-f1.jpg");
+  background-size: cover;
+}
+
+.schuinTwee {
+  -webkit-clip-path: polygon(100% -500%, 150% 150%,35% 150%);
+  height: 187.8px;
+}
+
+.vier {
+  background-color: #EB6F55;
+  margin-top: 80px;
+  width: 50%;
+}
+
+.vijf {
+  background-color: #88CDAE;
+  margin-top: 80px;
+}
+
+.zeven{
+  margin-top: -455px;
+  background-color: #FEDD2C;
+}
+.backbutton{
+  background-color: #C1DED7;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+  width: 65px;
+  height: 65px;
+  color: black;
+  border: 1px solid white;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+#buttonresultaat{
+  margin-left: 52%;
+  margin-top: 5%;
+  background-color: white;
+  border-radius: 10em;
+  padding: 2px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  width: 70px;
+  color: #EB6F55;
+  border: 1px solid white;
+}
+.tweep {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 7px;
+  font-size: 15px;
+}
+p {
+  text-align: center;
+}
+
+
+.artikel {
+  text-align: center;
+  width: 50%;
+  margin-left: 85px;
+  padding-top: 55px;
+  font-size: 15px;
+}
+
+.zoekfunctie {
+  text-align: center;
+  padding-top: 30px;
+}
+
+input {
+	outline: none;
+  font-family: 'Abel', sans-serif;
+
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+  font-size: 60%;
+  font-family: 'Abel', sans-serif;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 100px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #66CC75;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}

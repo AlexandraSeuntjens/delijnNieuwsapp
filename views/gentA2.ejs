@@ -1,0 +1,37 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/gent"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Situatie sinds 27 november 2017</h1>
+            <p class="spatie"> Sinds maandag 27 november werd de nieuwe tramhalte aan Flanders Expo in gebruik genomen. De tijdelijke tramhalte in de Derbystraat werd afgeschaft.
+              Volg de nieuwe staproute vanaf de P+R parking via het voetpad naar de vernieuwde tramhalte (zie kaartje hieronder).</p>
+          <h1> Opgelet! Gebruik van P+R tijdens evenementen in Flanders Expo </h1>
+            <p class="spatie"> De P+R parking De Lijn is steeds gratis. De andere parkings rond Flanders Expo ook, op voorwaarde dat er geen beurs of evenement plaats vindt.
+              De P+R parking De Lijn beschikt slechts over een honderdtal parkeerplaatsen. Op zich geen probleem als er geen andere evenementen zijn in de hallen,
+              want er zijn nog massa's plaatsen op de andere parkings rond Flanders Expo. Als er wel een evenement is (en je op één van de andere parkings zou parkeren als die van De Lijn volzet is) dan moet je een speciaal parkeerticket aankopen aan de beursloketten in Flanders Expo (niet aan de tramloketten).
+            </p>
+            <p class="spatie"> Het is dus m.a.w. enkel op de P+R parking van De Lijn dat je tijdens evenementen in Flanders Expo gratis kunt parkeren als je naar het centrum wilt reizen.
+              Voor je thuis vertrekt is het handig om eerst de kalender te raadplegen, zo kom je niet voor verrassingen te staan. Klik hier voor de evenementenkalender van Flanders Expo.
+            </p>
+            <p class="spatie"> Uiteraard kun je altijd nog opteren voor een andere gratis P+R parking in Gent. Ontdek ze hier allemaal.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[1].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[1].overzichtText;
+</script>

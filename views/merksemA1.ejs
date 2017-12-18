@@ -1,0 +1,36 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/merksem"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Wat is een stiptheidshalte? </h1>
+            <p class="spatie"> Een stiptheidshalte is een gewone bushalte, maar met zowel een aankomsttijd als een vertrektijd.
+              Er wordt dus een buffer voorzien van enkele minuten aan deze halte.</p>
+            <p class="spatie"> Op momenten met vlot verkeer zal de bus enkele minuten wachten aan de stiptheidshalte zodat de chauffeur weer exact volgens schema kan vertrekken.
+              Wanneer de bus vertraging heeft opgelopen door verkeershinder, wacht de bus niet aan deze halte en worden meteen enkele minuten tijdsverlies opgevangen.
+            </p>
+          <h1> Waarom worden deze stiptheidshaltes ingevoerd? </h1>
+            <p class="spatie"> De Lijn wil naar een betrouwbare dienstregeling voor elke bus. Een dienstregeling die aangepast is aan de mogelijke verkeershinder op de reisweg met een bus die rijdt volgens een realististisch tijdsschema.</p>
+            <p class="spatie"> De theoretische reisduur van de busrit wordt hierdoor iets langer, wat door files in de praktijk al langer het geval was.
+              Maar op een stiptere bus moet je als reiziger uiteraard minder lang wachten aan de halte. Hierdoor zal de totale tijd dat je onderweg bent van thuis tot aan je bestemming (wachttijd aan halte + reistijd) dalen.
+            </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[0].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[0].overzichtText;
+</script>

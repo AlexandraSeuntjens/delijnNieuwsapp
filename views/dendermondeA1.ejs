@@ -1,0 +1,33 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/dendermonde"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+        <p class="spatie"> Dankzij de tussenkomst van de stad Dendermonde reist iedereen gratis met De Lijn. </p>
+          <h1> Hoe? </h1>
+            <p class="spatie"> Vraag bij de chauffeur een nulbiljet en de stad Dendermonde betaalt. </p>
+          <h1> Waar?  </h1>
+            <p class="spatie">De op- en afstaphalte moeten altijd binnen het grondgebied Dendermonde liggen (Dendermonde, Baasrode, Grembergen, Mespelare, Oudegem, Schoonaarde, Appels en Sint-Gillis Dendermonde).
+            </p>
+          <h1> Wanneer? </h1>
+            <p class="spatie"> Alle dagen, inclusief feestdagen. </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[0].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[0].overzichtText;
+</script>

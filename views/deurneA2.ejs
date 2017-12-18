@@ -1,0 +1,34 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/deurne"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Bus 24 tussen Silsburg en Centraal Station </h1>
+            <p class="spatie"> Vanuit Silsburg rijdt bus 24 volgens dezelfde reisweg tot aan eindhalte ‘Centraal Station’ aan het Astridplein.
+              Reizigers naar de Melkmarkt kunnen hier overstappen op tram 11 of 12, die de lus naar de Melkmarkt blijven bedienen. </p>
+            <p class="spatie"> Ook van het Centraal Station naar Silsburg blijft de reisweg behouden, behalve tussen de halte ‘F. Pauwels’ en eindhalte ‘Krijgsbaan’.
+              Daar rijdt bus 24 via de F. Pauwelslei en de Boterlaarbaan. </p>
+            <p class="spatie"> Tussen Silsburg en de F. Rooseveltplaats blijft ook bus 31 rijden. Op de gemeenschappelijke haltes met bus 24 komt er dus elke 7,5 minuten een bus langs. </p>
+            <p class="spatie"> De haltes op de Herentalsebaan van 'Florent Pauwels' tot 'Muggenberg' worden ook bediend door tram 8, die naar metrostation 'Astrid' rijdt. Ook in metrostation 'Zegel' kan je tram 8 nemen.</p>
+          <h1> Tram 24 tijdens de spits </h1>
+            <p class="spatie"> Op werkdagen kan je tijdens de spitsuren tram 24 nemen tussen Stenenbrug en de Melkmarkt. Buiten de spits zorgen de overige bus- en tramlijnen op die as voor voldoende reizigersplaatsen.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[1].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[1].overzichtText;
+</script>

@@ -1,0 +1,38 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/dendermonde"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Hoe werkt de belbus? </h1>
+            <p class="spatie"> De belbus rijdt elke dag en heeft geen vaste route of dienstregeling. De belbus stopt alleen aan haltes van De Lijn die je op voorhand aanvraagt bij de belbuscentrale.
+            </p>
+          <h1> Voor wie? </h1>
+            <p class="spatie"> De belbus is er voor iedereen. Ook voor rolstoelgebruikers, reizigers met een kinderwagen en groepen tot 14 personen. </p>
+          <h1> Kostprijs? </h1>
+            <p class="spatie"> Je betaalt dezelfde prijs als op een gewone bus. </p>
+          <h1> Hoe reserveer je de belbus? </h1>
+            <ul>
+              <li> Contacteer de belbuscentrale (minstens 1 uur vooraf). </li>
+              <li> Zeg welke verplaatsing je wil maken en je rit wordt gereserveerd. </li>
+              <li> De belbus pikt je op aan de afgesproken halte op het afgesproken moment. </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[1].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[1].overzichtText;
+</script>

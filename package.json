@@ -1,0 +1,26 @@
+{
+  "name": "delijn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.2",
+    "nodemon": "^1.12.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandraSeuntjens/delijnNieuwsapp.git"
+  },
+  "author": "Groep Streep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandraSeuntjens/delijnNieuwsapp/issues"
+  },
+  "homepage": "https://github.com/AlexandraSeuntjens/delijnNieuwsapp#readme"
+}

@@ -1,0 +1,40 @@
+<% include header %>
+
+<body>
+  <div class="achtergrond2">
+    <div id="gridartikel">
+      <div id="eenartikel">
+        <button class="backbutton"><a href="/gent"> < </a></button>
+        <img class="logo"src="http://is3.mzstatic.com/image/thumb/Purple128/v4/da/7d/ec/da7dec8b-144a-a52a-5db3-d901eb4b202d/source/1200x630bb.jpg"></img>
+      </div>
+      <div id="tweeartikel"></div>
+      <div id="drieartikel">
+        <p id="titel"></p>
+      </div>
+      <div id="vierartikel">
+        <p id="inleiding"> </p>
+          <h1> Extra bussen dankzij de Provincie Oost-Vlaanderen en Music for Life </h1>
+            <p class="spatie"> Tijdens de Warmste Week brengt lijn 76 (De Pinte - Gent - Lochristi – Wachtebeke) je tot vlakbij het festivaleiland in Puyenbroeck, elke dag en om het uur. Stap af aan halte Puyenbroeck P1.
+                Aan Gent Sint-Pietersstation, Zuid of Dampoort kan je op deze lijn overstappen als je met de trein of een andere buslijn komt. Stippel je volledige route uit met de routeplanner.
+            </p>
+          <h1> Extra ritten van maandag 18 tot en met vrijdag 22 december </h1>
+            <p class="spatie">Vanuit Gent Sint-Pieters kan je nog mee naar Puyenbroeck tot 18.30 uur, dan vertrekt de laatste rit (perron 15).
+            </p>
+            <p class="spatie"> Speciaal tijdens Music For Life wordt er vanuit Puyenbroeck P1 om 23 uur een extra rit voorzien naar Gent Sint-Pietersstation. Deze stopt ook aan de tussenliggende haltes.
+            </p>
+          <h1> Extra ritten op zaterdag 23 december </h1>
+            <p class="spatie"> Op zaterdag wordt het wellicht iets drukker aan de studio van de Warmste week. Naast de normale dienstregeling overdag zijn er 's avonds 3 extra ritten: Heen (Gent Sint-Pietersstation P15 > Puyenbroeck P1)
+            </p>
+          <h1> Zondag 24 december </h1>
+            <p class="spatie"> Na de slotshow op kerstavond kan je met de bus van 18.17 uur van Puyenbroeck P1 terug naar het Sint-Pietersstation.
+            </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var gemeente = <%-data%>;
+  document.getElementById('titel').innerHTML = gemeente.nieuwsberichten[2].titel;
+  document.getElementById('inleiding').innerHTML = gemeente.nieuwsberichten[2].overzichtText;
+</script>
